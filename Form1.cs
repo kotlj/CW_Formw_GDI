@@ -35,7 +35,18 @@ namespace CW_Forms_GDI
             int.TryParse(textBoxY2.Text, out int y2);
             Point p1 = new Point(x1, y1);
             Point p2 = new Point(x2, y2);
-            gr.DrawLine(pen, p1, p2);
+            if (radioButtonLine.Checked)
+            {
+                gr.DrawLine(pen, p1, p2);
+            }
+            else if (radioButtonRectangle.Checked)
+            {
+                gr.DrawRectangle(pen, x1, y1, y2, x2);
+            }
+            else if (radioButtonElips.Checked)
+            {
+                gr.DrawEllipse(pen, x1, y1, y2, x2);
+            }
         }
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)
@@ -46,6 +57,20 @@ namespace CW_Forms_GDI
         private void buttonClear_Click(object sender, EventArgs e)
         {
             gr.Clear(Color.White);
+        }
+
+        private void RadioChanged(object sender, EventArgs e)
+        {
+            if ((sender as RadioButton).Text != "Line")
+            {
+                X_2.Text = "Height";
+                Y_2.Text = "Width";
+            }
+            else
+            {
+                X_2.Text = "X-2";
+                Y_2.Text = "Y-2";
+            }
         }
     }
 }

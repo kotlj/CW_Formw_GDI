@@ -46,6 +46,9 @@
             buttonOK = new Button();
             panel1 = new Panel();
             buttonClear = new Button();
+            radioButtonLine = new RadioButton();
+            radioButtonRectangle = new RadioButton();
+            radioButtonElips = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             SuspendLayout();
             // 
@@ -112,7 +115,7 @@
             // X_1
             // 
             X_1.AutoSize = true;
-            X_1.Location = new Point(588, 219);
+            X_1.Location = new Point(571, 219);
             X_1.Name = "X_1";
             X_1.Size = new Size(32, 20);
             X_1.TabIndex = 7;
@@ -121,7 +124,7 @@
             // X_2
             // 
             X_2.AutoSize = true;
-            X_2.Location = new Point(588, 266);
+            X_2.Location = new Point(571, 294);
             X_2.Name = "X_2";
             X_2.Size = new Size(32, 20);
             X_2.TabIndex = 8;
@@ -129,14 +132,14 @@
             // 
             // textBoxX1
             // 
-            textBoxX1.Location = new Point(626, 219);
+            textBoxX1.Location = new Point(609, 219);
             textBoxX1.Name = "textBoxX1";
             textBoxX1.Size = new Size(51, 27);
             textBoxX1.TabIndex = 9;
             // 
             // textBoxX2
             // 
-            textBoxX2.Location = new Point(626, 263);
+            textBoxX2.Location = new Point(626, 287);
             textBoxX2.Name = "textBoxX2";
             textBoxX2.Size = new Size(51, 27);
             textBoxX2.TabIndex = 10;
@@ -144,7 +147,7 @@
             // Y_1
             // 
             Y_1.AutoSize = true;
-            Y_1.Location = new Point(690, 219);
+            Y_1.Location = new Point(571, 254);
             Y_1.Name = "Y_1";
             Y_1.Size = new Size(31, 20);
             Y_1.TabIndex = 11;
@@ -153,7 +156,7 @@
             // Y_2
             // 
             Y_2.AutoSize = true;
-            Y_2.Location = new Point(690, 266);
+            Y_2.Location = new Point(571, 323);
             Y_2.Name = "Y_2";
             Y_2.Size = new Size(31, 20);
             Y_2.TabIndex = 12;
@@ -161,23 +164,23 @@
             // 
             // textBoxY1
             // 
-            textBoxY1.Location = new Point(727, 219);
+            textBoxY1.Location = new Point(608, 251);
             textBoxY1.Name = "textBoxY1";
             textBoxY1.Size = new Size(51, 27);
             textBoxY1.TabIndex = 13;
             // 
             // textBoxY2
             // 
-            textBoxY2.Location = new Point(727, 263);
+            textBoxY2.Location = new Point(626, 320);
             textBoxY2.Name = "textBoxY2";
             textBoxY2.Size = new Size(51, 27);
             textBoxY2.TabIndex = 14;
             // 
             // buttonOK
             // 
-            buttonOK.Location = new Point(640, 310);
+            buttonOK.Location = new Point(556, 410);
             buttonOK.Name = "buttonOK";
-            buttonOK.Size = new Size(94, 60);
+            buttonOK.Size = new Size(47, 28);
             buttonOK.TabIndex = 15;
             buttonOK.Text = "OK";
             buttonOK.UseVisualStyleBackColor = true;
@@ -193,19 +196,57 @@
             // 
             // buttonClear
             // 
-            buttonClear.Location = new Point(640, 378);
+            buttonClear.Location = new Point(729, 410);
             buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(94, 60);
+            buttonClear.Size = new Size(59, 28);
             buttonClear.TabIndex = 17;
             buttonClear.Text = "Clear";
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
+            // 
+            // radioButtonLine
+            // 
+            radioButtonLine.AutoSize = true;
+            radioButtonLine.Checked = true;
+            radioButtonLine.Location = new Point(690, 215);
+            radioButtonLine.Name = "radioButtonLine";
+            radioButtonLine.Size = new Size(57, 24);
+            radioButtonLine.TabIndex = 18;
+            radioButtonLine.TabStop = true;
+            radioButtonLine.Text = "Line";
+            radioButtonLine.UseVisualStyleBackColor = true;
+            radioButtonLine.CheckedChanged += RadioChanged;
+            // 
+            // radioButtonRectangle
+            // 
+            radioButtonRectangle.AutoSize = true;
+            radioButtonRectangle.Location = new Point(690, 245);
+            radioButtonRectangle.Name = "radioButtonRectangle";
+            radioButtonRectangle.Size = new Size(96, 24);
+            radioButtonRectangle.TabIndex = 19;
+            radioButtonRectangle.Text = "Rectangle";
+            radioButtonRectangle.UseVisualStyleBackColor = true;
+            radioButtonRectangle.CheckedChanged += RadioChanged;
+            // 
+            // radioButtonElips
+            // 
+            radioButtonElips.AutoSize = true;
+            radioButtonElips.Location = new Point(690, 275);
+            radioButtonElips.Name = "radioButtonElips";
+            radioButtonElips.Size = new Size(61, 24);
+            radioButtonElips.TabIndex = 20;
+            radioButtonElips.Text = "Elips";
+            radioButtonElips.UseVisualStyleBackColor = true;
+            radioButtonElips.CheckedChanged += RadioChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(radioButtonElips);
+            Controls.Add(radioButtonRectangle);
+            Controls.Add(radioButtonLine);
             Controls.Add(buttonClear);
             Controls.Add(panel1);
             Controls.Add(buttonOK);
@@ -250,5 +291,8 @@
         private Button buttonOK;
         private Panel panel1;
         private Button buttonClear;
+        private RadioButton radioButtonLine;
+        private RadioButton radioButtonRectangle;
+        private RadioButton radioButtonElips;
     }
 }
