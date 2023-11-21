@@ -1,0 +1,16 @@
+C:\Users\Admin\source\repos\CW_Forms_GDI\bin\Debug\net6.0-windows\CW_Forms_GDI.exe
+C:\Users\Admin\source\repos\CW_Forms_GDI\bin\Debug\net6.0-windows\CW_Forms_GDI.deps.json
+C:\Users\Admin\source\repos\CW_Forms_GDI\bin\Debug\net6.0-windows\CW_Forms_GDI.runtimeconfig.json
+C:\Users\Admin\source\repos\CW_Forms_GDI\bin\Debug\net6.0-windows\CW_Forms_GDI.dll
+C:\Users\Admin\source\repos\CW_Forms_GDI\bin\Debug\net6.0-windows\CW_Forms_GDI.pdb
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.Form1.resources
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.AssemblyInfo.cs
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.dll
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\refint\CW_Forms_GDI.dll
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.pdb
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\CW_Forms_GDI.genruntimeconfig.cache
+C:\Users\Admin\source\repos\CW_Forms_GDI\obj\Debug\net6.0-windows\ref\CW_Forms_GDI.dll
